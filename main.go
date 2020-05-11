@@ -21,6 +21,8 @@ func main() {
 		//ELECTRONICS SHOP
 		getMoneySpent([]int32{3, 1}, []int32{5, 2, 8}, 10)
 
+		// CATS AND A MOUSE
+		catAndMouse(1, 2, 3)
 	*/
 
 }

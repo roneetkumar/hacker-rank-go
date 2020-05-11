@@ -2,8 +2,27 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 )
+
+func catAndMouse(c1 int32, c2 int32, m int32) {
+
+	c1s := math.Abs(float64(m - c1))
+	c2s := math.Abs(float64(m - c2))
+
+	if c1s < c2s {
+		fmt.Println("Cat A")
+		return
+	}
+	if c1s > c2s {
+		fmt.Println("Cat B")
+		return
+	}
+
+	fmt.Println("Mouse C")
+	return
+}
 
 func getMoneySpent(keyboards []int32, drives []int32, b int32) {
 	max := int32(-1)
